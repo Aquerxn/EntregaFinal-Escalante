@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.logo{
+    display: flex;
+    height: 35px;
+}
+
+.logo img{
+    display: flex;
+    width: 150px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+
+
+/*MENU */
+
+/* TITULO MENU */
+
+.titulo-menu{
+    text-align: center;
+    padding: 40px 0;
+}
+
+.container-menu{
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    contain: paint;
+}
+
+.container-productos{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 30px;
+    grid-row-gap: 30px;
+    width: 60%;
+    transition: .3s;
+}
+
+.producto{
+    max-width: 100%;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 20px;
+    transition: .3s;
+}
+
+.producto:hover{
+    box-shadow: 0 0 10px #666;
+    scale: 1.05;
+}
+
+.titulo-producto{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.img-producto{
+    width: 100%;
+}
+
+.precio-producto{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+}
+
+.boton-producto{
+    display: block;
+    margin: 10px, auto;
+    border: none;
+    background: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* CARRITO */
+
+.carrito{
+    border: 1px solid #666;
+    width: 35%;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: auto;
+    position: sticky !important;
+    top: 0;
+    transition: .3s;
+}
+
+.header-carrito{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.carrito-producto{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #666;
+    padding: 20px;
+}
+
+.carrito-producto img{
+    width: 25%;
+    margin-right: 20px;
+}
+
+.carrito-producto-titulo{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.selector-cantidad{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.carrito-producto-cantidad{
+    border: none;
+    font-size: 18px;
+    background: transparent;
+    display: inline-block;
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+}
+
+.selector-cantidad i{
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #666;
+    cursor: pointer;
+}
+
+.carrito-producto-precio{
+    font-weight: bold;
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.btn-eliminar{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: black;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #666;
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    z-index: 20;
+}
+
+.btn-eliminar i{
+    pointer-events: none;
+}
+
+.carrito-total{
+    background-color: white;
+    padding: 30px;
+}
+
+.fila{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.btn-pagar{
+    display: block;
+    width: 100%;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-pagar:hover{
+    scale: 1.05;
+}
+
+@media screen and (max-width:850px) {
+    .container-menu{
+        display: block;
+    }
+
+    .container-productos{
+        width: 100% !important; 
+    }
+
+    .carrito{
+        width: 100%;
+    }
+}
+

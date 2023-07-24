@@ -1,0 +1,54 @@
+{
+    "productos": [
+    {
+        "titulo" : "Pimientos Rellenos",
+        "imagenSrc" : "../img/img-paginaweb.png",
+        "precio" : "800"
+    },
+    {
+        "titulo" : "Moñitos con hongos y espinaca",
+        "imagenSrc" : "../img/img-paginaweb1.png",
+        "precio" : "500"
+    },
+    {
+        "titulo" : "Salmón con Esparragos",
+        "imagenSrc" : "../img/img-paginaweb2.png",
+        "precio" : "1.500"
+    },
+    {
+        "titulo" : "Salmón con arroz y ensalada veraniega",
+        "imagenSrc" : "../img/img-paginaweb3.png",
+        "precio" : "1.600"
+    },
+    {
+        "titulo" : "Ensalada de marisco y palta",
+        "imagenSrc" : "../img/img-paginaweb4.png",
+        "precio" : "1.500"
+    },
+    {
+        "titulo" : "Mariscos con spaguetti y pesto",
+        "imagenSrc" : "../img/img-paginaweb5.png",
+        "precio" : "1.500"
+    },
+    {
+        "titulo" : "Salmón a la crema con espinaca",
+        "imagenSrc" : "../img/img-paginaweb6.png",
+        "precio" : "2.000"
+    },
+    {
+        "titulo" : "Canelones de pepino",
+        "imagenSrc" : "../img/img-paginaweb7.png",
+        "precio" : "1.500"
+    },
+    {
+        "titulo" : "Pechuga con vegetales salteados",
+        "imagenSrc" : "../img/img-paginaweb8.png",
+        "precio" : "1.500"
+    },
+    {
+        "titulo" : "Pinchos de pollo con ensalada",
+        "imagenSrc" : "../img/img-paginaweb9.png",
+        "precio" : "1.200"
+    }
+]
+}
