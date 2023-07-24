@@ -206,7 +206,7 @@ function agregarProductoAlCarrito(titulo, precio, imagenSrc) {
         var precioNumerico = parseFloat(precio.replace('$', '').replace(',', ''));
 
         // OBTENES LA CANTIDAD DE PRODUCTO SELECCIONADA POR EL USUARIO
-        var cantidadProducto = 1; // Valor predeterminado
+        var cantidadProducto = 1;
         var cantidadInput = producto.getElementsByClassName('carrito-producto-cantidad')[0];
         if (cantidadInput !== null && cantidadInput !== undefined) {
             cantidadProducto = parseInt(cantidadInput.value);
