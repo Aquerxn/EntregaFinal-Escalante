@@ -62,8 +62,6 @@ function cargarProductosDesdeJSON() {
     fetch('productos.json')
         .then(response => response.json())
         .then(data => {
-        // La variable "data" contiene los datos del JSON
-        // Aquí procesas los datos y muestras los productos en la página
         mostrarProductosEnPagina(data.productos);
     })
         .catch(error => {
@@ -207,30 +205,28 @@ function agregarProductoAlCarrito(titulo, precio, imagenSrc) {
 
         var precioNumerico = parseFloat(precio.replace('$', '').replace(',', ''));
 
-        // Obtener la cantidad del producto seleccionada por el usuario
+        // OBTENES LA CANTIDAD DE PRODUCTO SELECCIONADA POR EL USUARIO
         var cantidadProducto = 1; // Valor predeterminado
         var cantidadInput = producto.getElementsByClassName('carrito-producto-cantidad')[0];
         if (cantidadInput !== null && cantidadInput !== undefined) {
             cantidadProducto = parseInt(cantidadInput.value);
         }
 
-        // Obtener el carrito actual del LocalStorage
+        // OBTENER EL CARRITO ACTUAL DEL LocalStorage
         var carritoData = localStorage.getItem('carrito');
         var productosCarrito = [];
         if (carritoData) {
             productosCarrito = JSON.parse(carritoData);
         }
 
-        // Verificar si el producto ya existe en el carrito
+        // VERIFICAR SI EL PRODUCTO YA EXISTE EN EL CARRITO
         var productoExistente = productosCarrito.find(function (producto) {
             return producto.titulo === titulo;
         });
 
         if (productoExistente) {
-            // Actualizar la cantidad del producto existente en el carrito
             productoExistente.cantidad += cantidadProducto;
         } else {
-            // Agregar nuevo producto al carrito
             var nuevoProducto = {
                 titulo: titulo,
                 precio: precio,
@@ -240,7 +236,7 @@ function agregarProductoAlCarrito(titulo, precio, imagenSrc) {
             productosCarrito.push(nuevoProducto);
         }
 
-        // Guardar el carrito actualizado en el LocalStorage
+        // GUARDAR EL CARRITO ACTUALIZADO EN EL LocalStorage
         localStorage.setItem('carrito', JSON.stringify(productosCarrito));
 
         actualizarTotalCarrito();

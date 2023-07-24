@@ -2,12 +2,12 @@
     "productos": [
     {
         "titulo" : "Pimientos Rellenos",
-        "imagenSrc" : "img/img-paginaweb.png",
+        "imagenSrc" : "/img/img-paginaweb.png",
         "precio" : "800"
     },
     {
         "titulo" : "Moñitos con hongos y espinaca",
-        "imagenSrc" : "img/img-paginaweb1.png",
+        "imagenSrc" : "/img/img-paginaweb1.png",
         "precio" : "500"
     },
     {
